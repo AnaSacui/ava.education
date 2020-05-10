@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AVA Educație</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style media="screen">
+    body {
+      font-size: 16px;
+      min-width: 475px;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .intro {
+      background-image: url(resources/images/playground.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height:100rem;
+    }
+
+    .intro-container {
+      margin-top: 15%;
+    }
+
+    .intro-text {
+      background-color: rgba(254,236,108,0.8);
+      color: #038AED;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-align: center;
+      min-height: 30em;
+    }
+
+    .intro-text h1 {
+      font-size: 5em;
+      padding-top: 0.5em;
+    }
+
+    .intro-text p {
+      color: slateblue;
+      text-transform: none;
+      padding: 3em 5em;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .page-note{
+      text-align: center;
+      padding: 2em 1em;
+      color: white;
+      background-color: #AFD33B;
+      margin: 0;
+    }
+
+    .container {
+      margin-top: 5%;
+    }
+    .category-container {
+      background-color: rgba(250,250,250,0.9);
+      padding: 10% 5%;
+      text-align: center;
+      border-radius: 10%;
+    }
+
+    .category-container h3 {
+      padding-bottom: 2rem;
+      font-size: 3em;
+    }
+
+    .category-container p {
+      font-size: 2em;
+      color: #038AED;
+      margin-bottom: 3em;
+    }
+
+    .category-container a {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      padding: 0.75em 3em;
+      background-color: orange;
+      font-size: 1.5em;
+      color: white;
+      transition: all 1s;
+    }
+
+    .category-container a:hover {
+      color: white;
+      background-color: green;
+      text-decoration: none;
+    }
+
+    /* Colours */
+    .section-colours {
+      background-image: url(resources/images/color-swatch.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: #C0E1F2;
+    }
+
+    .rainbow-text {
+      background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    /* Seasons */
+    .section-seasons {
+      background-image: url(resources/images/mountain.png);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: right;
+      background-size: contain;
+      background-color: #A4C7FF;
+    }
+
+    /* Pronouns */
+    .section-pronouns {
+      background-image: url(resources/images/friends.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: #C0E1F2;
+    }
+
+    /* Actions */
+    .section-actions {
+      background-image: url(resources/images/actions.png);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: right;
+      background-size: contain;
+      background-color: #A4C7FF;
+    }
+
+    /* Feelings */
+    .section-feelings {
+      background-image: url(resources/images/feelings.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: #C0E1F2;
+    }
+
+    /* Words */
+    .section-words {
+      background-image: url(resources/images/words.svg);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: right;
+      background-size: contain;
+      background-color: #A4C7FF;
+    }
+
+    /* Needs */
+    .section-needs {
+      background-image: url(resources/images/needs.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: #C0E1F2;
+    }
+
+    /* Food */
+    .section-food {
+      background-image: url(resources/images/food.svg);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: right;
+      background-size: contain;
+      background-color: #A4C7FF;
+    }
+
+    /* Clothes */
+    .section-clothes {
+      background-image: url(resources/images/clothes.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: #C0E1F2;
+    }
+
+    /* Time */
+    .section-time {
+      background-image: url(resources/images/time.svg);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: right;
+      background-size: contain;
+      background-color: #A4C7FF;
+    }
+
+    /* Search */
+    .section-search {
+      background-image: url(resources/images/search.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: left;
+      background-size: contain;
+      background-color: white;
+    }
+
+    .footer {
+      background-image: url(resources/images/together.svg);
+      background-repeat: no-repeat;
+      min-height: 25rem;
+      padding: 3em;
+      background-position: center;
+      background-size: contain;
+      background-color: #F9FAFB;
+    }
+
+    .footer p {
+      text-align: right;
+      font-weight: bolder;
+      color: darkslategrey;;
+    }
+  </style>
+</head>
+<body>
+
+<div class="intro">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 intro-container">
+      <div class="intro-text">
+        <h1>AVA Educație</h1>
+        <h3>Cartonașele Vesele</h3>
+        <p>Salut! Bine ai venit în lumea noastră! Împreună vom explora lumea înconjuratoare în cea mai captivantă aventură! </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="page-note">Selectează din lista de mai jos lumea pe care <br> îți dorești să o explorezi</h2>
+
+<div class="content-container">
+  <div class="row section-colours">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3 class="rainbow-text">Culorile</h3>
+        <p>Care este culoarea ta preferată? Hai să le cunoaștem pe toate!</p>
+        <a href="pages/colors.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-seasons">
+    <div class="col-sm-6 col-xs-12">
+      <div class="category-container">
+        <h3>Anotimpurile</h3>
+        <p>În ce anotimp suntem? Vino să învățăm împreună anotimpurile!</p>
+        <a href="pages/seasons.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-pronouns">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3>Persoanele</h3>
+        <p>Cine sunt persoanele din jurul nostru și cum ne referim la ele?</p>
+        <a href="pages/pronouns.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-actions">
+    <div class="col-sm-6 col-xs-12">
+      <div class="category-container">
+        <h3>Acțiuni</h3>
+        <p>Care sunt cele mai frecvente activități? <br> Oare cine știe?</p>
+        <a href="pages/actions.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-feelings">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3>Sentimente</h3>
+        <p>Cum te simți? Hai să descriem împreună!</p>
+        <a href="pages/feelings.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-words">
+    <div class="col-sm-6 col-xs-12">
+      <div class="category-container">
+        <h3>Cuvinte des întâlnite</h3>
+        <p>Fă cunoștință cu vedetele. Dintre toate cuvinetele,<br> pe ele le folosim cel mai des!</p>
+        <a href="pages/words.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-needs">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3>Nevoi</h3>
+        <p>Totul e mult mai ușor când știm de ce avem nevoie, nu-i așa?</p>
+        <a href="pages/needs.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-food">
+    <div class="col-sm-6 col-xs-12">
+      <div class="category-container">
+        <h3>Alimente</h3>
+        <p>Îți este foame? Uite ce am pregătit pentru tine!</p>
+        <a href="pages/food.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-clothes">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3>Îmbrăcăminte</h3>
+        <p>Tricou, pantaloni, șosețele... oare ce mai avem în dulăpior?</p>
+        <a href="pages/clothes.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-time">
+    <div class="col-sm-6 col-xs-12">
+      <div class="category-container">
+        <h3>Timpul</h3>
+        <p>Oare ce ora e?</p>
+        <a href="pages/time.html">Alege</a>
+      </div>
+    </div>
+  </div>
+  <div class="row section-search">
+    <div class="col-sm-6 col-xs-12 col-sm-offset-6">
+      <div class="category-container">
+        <h3>Yeey!</h3>
+        <p>Ai ajuns la final, dar nu te îngrijora! Am plecat să explorăm lumea și <br> vom aduce noi aventuri pentru tine!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>AVA 2020</p>
+</div>
+
+</body>
+</html>
