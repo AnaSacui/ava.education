@@ -1,1 +1,202 @@
-.
+body {
+  font-size: 16px;
+  min-width: 475px;
+}
+
+.row {
+  margin: 0;
+}
+
+.intro {
+  background-image: url(../resources/images/playground-tiny.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:100rem;
+}
+
+.intro-container {
+  margin-top: 15%;
+}
+
+.intro-text {
+  background-color: rgba(255, 253, 218,0.85);
+  border-radius: 10px;
+  color: #038AED;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  min-height: 30em;
+}
+
+.intro-text h1 {
+  font-size: 5em;
+  padding-top: 0.5em;
+}
+
+.intro-text p {
+  color: slateblue;
+  text-transform: none;
+  padding: 3em 5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.page-note{
+  text-align: center;
+  padding: 2em 1em;
+  color: white;
+  background-color: #AFD33B;
+  margin: 0;
+}
+
+.container {
+  margin-top: 5%;
+}
+.category-container {
+  background-color: rgba(250,250,250,0.9);
+  padding: 10% 5%;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.category-container h3 {
+  padding-bottom: 2rem;
+  font-size: 3em;
+}
+
+.category-container p {
+  font-size: 2em;
+  color: #038AED;
+  margin-bottom: 3em;
+}
+
+.category-container a {
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 0.75em 3em;
+  background-color: orange;
+  font-size: 1.5em;
+  color: white;
+  transition: all 1s;
+}
+
+.category-container a:hover {
+  color: white;
+  background-color: green;
+  text-decoration: none;
+}
+
+/* Colours */
+.section-colours {
+  background-image: url(../resources/images/color-swatch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25rem;
+  padding: 3em;
+  background-position: left;
+  background-size: contain;
+  background-color: #C0E1F2;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Right side icons */
+.section-seasons,
+.section-actions,
+.section-words,
+.section-food,
+.section-time {
+  background-repeat: no-repeat;
+  min-height: 25rem;
+  padding: 3em;
+  background-position: right;
+  background-size: contain;
+  background-color: #A4C7FF;
+}
+
+/* Left side icons */
+.section-pronouns,
+.section-feelings,
+.section-needs,
+.section-clothes,
+.section-search {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25rem;
+  padding: 3em;
+  background-position: left;
+  background-size: contain;
+  background-color: #C0E1F2;
+}
+
+/* Seasons */
+.section-seasons {
+  background-image: url(../resources/images/mountain.png);
+}
+
+/* Pronouns */
+.section-pronouns {
+  background-image: url(../resources/images/friends.svg);
+}
+
+/* Actions */
+.section-actions {
+  background-image: url(../resources/images/actions.png);
+}
+
+/* Feelings */
+.section-feelings {
+  background-image: url(../resources/images/feelings.svg);
+}
+
+/* Words */
+.section-words {
+  background-image: url(../resources/images/words.svg);
+}
+
+/* Needs */
+.section-needs {
+  background-image: url(../resources/images/needs.svg);
+}
+
+/* Food */
+.section-food {
+  background-image: url(../resources/images/food.svg);
+}
+
+/* Clothes */
+.section-clothes {
+  background-image: url(../resources/images/clothes.png);
+}
+
+/* Time */
+.section-time {
+  background-image: url(../resources/images/time.svg);
+}
+
+/* Search */
+.section-search {
+  background-image: url(../resources/images/search.jpg);
+  background-color: white;
+}
+
+.footer {
+  background-image: url(../resources/images/together.svg);
+  background-repeat: no-repeat;
+  min-height: 25rem;
+  padding: 3em;
+  background-position: center;
+  background-size: contain;
+  background-color: #F9FAFB;
+}
+
+.footer p {
+  text-align: right;
+  font-weight: bolder;
+  color: darkslategrey;;
+}

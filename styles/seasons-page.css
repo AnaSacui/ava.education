@@ -1,0 +1,47 @@
+body {
+  background-image: url(../resources/images/jungle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #FFAA10;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-top: 3em;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.flashcard-container {
+  background-color: #fff;
+  padding: 10% 5%;
+  margin-bottom: 3em;
+  border-radius: 5%;
+}
+
+.flashcard-container h3 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.flashcard-container img {
+  margin-bottom: 4em;
+  width: 100%;
+  height: 20rem;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.flashcard-container img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.mp3-player{
+  width:100%;
+}
