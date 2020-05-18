@@ -10,12 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../styles/default-style-page.css">
+  <script src="../js/main.js"></script>
 </head>
 
 <body>
   <h1>Timpul</h1>
 
       <div class="container">
+
         <div class="row">
           <div class="col-sm-3">
             <div class="flashcard-container">
@@ -91,6 +93,18 @@
             </div>
           </div>
         </div>
+
+        <div class="row explore-button-container ">
+          <div class="col-md-10 col-md-offset-1">
+            <button type="button" name="exploreaza" class="explore-button" onClick="showExploreContainer()">Explorează</button>
+
+            <div id="documents-container" style="display: none;">
+              <p>Selectează din lista de mai jos fișa de lucru pe care îți dorești să o descarci:</p>
+              <a href="../resources/worksheets/time/Rutina-Spalatul-pe-dinti.jpg" download="Rutina-Spalatul-pe-dinti.jpg" target="_blank">Rutina spălatului pe dinți</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 </body>
 
