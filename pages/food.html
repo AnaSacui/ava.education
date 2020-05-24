@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../styles/default-style-page.css">  
+  <link rel="stylesheet" href="../styles/default-style-page.css">
+  <link rel="stylesheet" href="../styles/explore.css">
+  <script src="../js/main.js"></script>
 </head>
 
 <body>
@@ -121,6 +123,20 @@
                 <source src="../resources/sounds/food/branza.mp3" type="audio/mp3">
                 Browser-ul tău nu suportă elemente audio.
              </audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="row explore-button-container ">
+          <div class="col-md-10 col-md-offset-1">
+            <button type="button" name="exploreaza" class="explore-button" onClick="showExploreContainer()">Explorează</button>
+
+            <div id="documents-container" style="display: none;">
+              <p>Selectează din lista de mai jos fișa de lucru pe care îți dorești să o descarci:</p>
+              <a href="../resources/worksheets/food/pdf/Alimente-Planse-de-colorat.pdf" download="Alimente-Planse-de-colorat.docx" target="_blank">Planșe de colorat</a><br/>
+              <a href="../resources/worksheets/food/pdf/Alimente-Potriveste-Imaginile.pdf" download="Alimente-Potriveste-Imaginile.docx" target="_blank">Potrivește imaginile</a><br/>
+              <a href="../resources/worksheets/food/pdf/Alimente-Banca-de-cuvinte.pdf" download="Alimente-Banca-de-cuvinte.docx" target="_blank">Banca de cuvinte</a><br/>
+              <a href="../resources/worksheets/food/pdf/Alimente-Banca-de-imagini.pdf" download="Alimente-Banca-de-imagini.docx" target="_blank">Banca de imagini</a><br/>
             </div>
           </div>
         </div>
